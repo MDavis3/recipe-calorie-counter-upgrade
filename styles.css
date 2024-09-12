@@ -68,7 +68,7 @@ main {
 .hero h1 {
     font-size: 3em;
     margin-bottom: 20px;
-    color: white;
+    color: var(--primary-color);
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
@@ -76,8 +76,8 @@ main {
     font-size: 1.2em;
     max-width: 600px;
     margin: 0 auto 30px;
-    color: white;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    color: black;
+    text-shadow: 1px 1px 2px rgba(255,255,255,0.5);
 }
 
 .cta-button {
