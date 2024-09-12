@@ -2,7 +2,6 @@
     --primary-color: #FF8C1A;
     --primary-dark: #FF6600;
     --secondary-color: #FFB366;
-    --background-color: #FFF5E6;
     --text-color: #333333;
 }
 
@@ -10,13 +9,16 @@ body {
     font-family: 'Roboto', Arial, sans-serif;
     line-height: 1.6;
     color: var(--text-color);
-    background-color: var(--background-color);
     margin: 0;
     padding: 0;
+    background-image: url('CalorieCounterWallpaper.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 header {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.8);
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
@@ -49,6 +51,9 @@ main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 40px 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 h1 {
@@ -62,7 +67,6 @@ footer {
     color: white;
     text-align: center;
     padding: 20px;
-    position: absolute;
-    bottom: 0;
+    position: relative;
     width: 100%;
 }
