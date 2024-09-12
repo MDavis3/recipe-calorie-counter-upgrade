@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Calorie Calculator - Pricing</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .pricing-plans {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 40px 20px;
+        }
+        .plan {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 300px;
+        }
+        .plan h2 {
+            color: var(--primary-color);
+            margin-top: 0;
+        }
+        .plan-price {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        .plan-features {
+            list-style-type: none;
+            padding: 0;
+        }
+        .plan-features li {
+            margin-bottom: 10px;
+        }
+        .plan-button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+        .plan-button:hover {
+            background-color: var(--primary-dark);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pricing.html" class="active">Pricing</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Choose Your Plan</h1>
+        <section class="pricing-plans">
+            <div class="plan">
+                <h2>Basic</h2>
+                <div class="plan-price">$2.99/month</div>
+                <ul class="plan-features">
+                    <li>20 recipe calls per week</li>
+                    <li>Suitable for regular home cooks</li>
+                </ul>
+                <a href="#" class="plan-button" onclick="upgradePlan('basic')">Upgrade to Basic</a>
+            </div>
+            <div class="plan">
+                <h2>Premium</h2>
+                <div class="plan-price">$4.99/month</div>
+                <ul class="plan-features">
+                    <li>Unlimited recipe calls</li>
+                    <li>Ideal for food bloggers and chefs</li>
+                </ul>
+                <a href="#" class="plan-button" onclick="upgradePlan('premium')">Upgrade to Premium</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Recipe Calorie Calculator. All rights reserved.</p>
+    </footer>
+    <script>
+        function upgradePlan(tier) {
+            // Implement upgrade logic here
+            alert(`Upgrading to ${tier} plan. This would typically integrate with a payment system.`);
+        }
+    </script>
+</body>
+</html>

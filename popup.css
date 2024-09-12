@@ -1,0 +1,123 @@
+:root {
+    --primary-color: #FF8C1A;
+    --primary-dark: #FF6600;
+    --secondary-color: #FFB366;
+    --background-color: #FFF5E6;
+    --text-color: #333333;
+    --error-color: #FF4136;
+    --success-color: #2ECC40;
+}
+
+body {
+    width: 350px;
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: var(--primary-color);
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.hidden { 
+    display: none; 
+}
+
+#error { 
+    color: var(--error-color);
+    font-weight: 500;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: rgba(255, 65, 54, 0.1);
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+button:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-2px);
+}
+
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    background-color: white;
+    border: 1px solid var(--secondary-color);
+    border-radius: 4px;
+    padding: 15px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+#remainingCounts {
+    margin-bottom: 15px;
+    font-weight: 500;
+    color: var(--primary-color);
+    font-size: 14px;
+}
+
+#loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    font-style: italic;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+#result h2 {
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 10px;
+    color: var(--primary-color);
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#upgradePrompt {
+    background-color: white;
+    border: 2px solid var(--primary-color);
+    color: var(--text-color);
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+#upgradeLink {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+#upgradeLink:hover {
+    background-color: var(--primary-color);
+    color: white;
+}

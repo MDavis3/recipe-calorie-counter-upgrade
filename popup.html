@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Calorie Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Recipe Calorie Calculator</h1>
+            <div id="tierInfo" class="tier-info"></div>
+        </header>
+        
+        <div id="remainingCalls" class="remaining-calls"></div>
+        
+        <button id="countRecipe" class="btn-primary">Analyze Recipe</button>
+        
+        <div id="loading" class="loading hidden">
+            <div class="spinner"></div>
+            <p>Analyzing recipe...</p>
+        </div>
+        
+        <div id="error" class="error hidden"></div>
+        
+        <div id="upgradePrompt" class="upgrade-prompt hidden">
+            <p>You've reached your weekly limit. Upgrade your plan for more analyses!</p>
+            <a id="upgradeLink" href="#" target="_blank" class="btn-secondary">Upgrade Now</a>
+        </div>
+        
+        <div id="result" class="result hidden">
+            <h2>Recipe Analysis</h2>
+            <pre id="recipeAnalysis"></pre>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
