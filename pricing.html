@@ -12,6 +12,7 @@
             justify-content: center;
             gap: 20px;
             padding: 40px 20px;
+            flex-wrap: wrap;
         }
         .plan {
             background-color: white;
@@ -19,6 +20,7 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             padding: 30px;
             width: 300px;
+            margin-bottom: 20px;
         }
         .plan h2 {
             color: var(--primary-color);
@@ -66,13 +68,22 @@
         <h1>Choose Your Plan</h1>
         <section class="pricing-plans">
             <div class="plan">
+                <h2>Free</h2>
+                <div class="plan-price">$0/month</div>
+                <ul class="plan-features">
+                    <li>5 recipe calls per week</li>
+                    <li>Basic calorie calculation</li>
+                </ul>
+                <a href="https://chrome.google.com/webstore/detail/your-extension-id" class="plan-button">Download Extension</a>
+            </div>
+            <div class="plan">
                 <h2>Basic</h2>
                 <div class="plan-price">$2.99/month</div>
                 <ul class="plan-features">
                     <li>20 recipe calls per week</li>
                     <li>Suitable for regular home cooks</li>
                 </ul>
-                <a href="#" class="plan-button" onclick="upgradePlan('basic')">Upgrade to Basic</a>
+                <a href="https://chrome.google.com/webstore/detail/your-extension-id" class="plan-button">Download Extension</a>
             </div>
             <div class="plan">
                 <h2>Premium</h2>
@@ -81,7 +92,7 @@
                     <li>Unlimited recipe calls</li>
                     <li>Ideal for food bloggers and chefs</li>
                 </ul>
-                <a href="#" class="plan-button" onclick="upgradePlan('premium')">Upgrade to Premium</a>
+                <a href="https://chrome.google.com/webstore/detail/your-extension-id" class="plan-button">Download Extension</a>
             </div>
         </section>
     </main>
