@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upgrade Your Recipe Analyzer Plan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        .plan {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .plan h2 {
+            margin-top: 0;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Upgrade Your Recipe Analyzer Plan</h1>
+        
+        <div class="plan">
+            <h2>Basic Tier</h2>
+            <p>$2.99/month or $29.99/year</p>
+            <ul>
+                <li>20 recipe calls per week</li>
+                <li>Suitable for regular home cooks</li>
+            </ul>
+            <button onclick="upgradePlan('basic')">Upgrade to Basic</button>
+        </div>
+
+        <div class="plan">
+            <h2>Premium Tier</h2>
+            <p>$4.99/month or $49.99/year</p>
+            <ul>
+                <li>Unlimited recipe calls</li>
+                <li>Ideal for food bloggers, professional chefs, or cooking enthusiasts</li>
+            </ul>
+            <button onclick="upgradePlan('premium')">Upgrade to Premium</button>
+        </div>
+    </div>
+
+    <script>
+        function upgradePlan(tier) {
+            // Here you would implement the actual upgrade logic
+            // This might involve connecting to a payment processor, updating a database, etc.
+            alert(`Upgrading to ${tier} tier. In a real implementation, this would connect to a payment processor.`);
+        }
+    </script>
+</body>
+</html>
